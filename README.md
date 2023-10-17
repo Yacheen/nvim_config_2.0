@@ -1,3 +1,5 @@
+windows: 
+
 install rust (follow instructions for visual studio tools on it)
 
 install comicshans nerd font
@@ -19,3 +21,7 @@ add to .bashrc:
 eval "$(oh-my-posh --init --shell bash --config C:/Users/Yassin/Desktop/buh/yassin.omp.json)"
 
 then git pull er een
+
+macos: 
+
+linux: 
