@@ -49,10 +49,9 @@ return {
             opts.desc = "Go to next diagnostic"
             keymap.set("n", "]d", vim.diagnostic.goto_next, opts) -- jump to next diagnostic in buffer
 
+            -- idk why this isnt working somebody halp
             -- opts.desc = "Go to previous Error diagnostic"
-            -- keymap.set("n", "[e", vim.diagnostic.goto_prev({
-            --     severity = vim.diagnostic.severity.ERROR
-            -- }), opts)
+            -- keymap.set("n", "[e", vim.diagnostic.goto_prev({ severity = {max = vim.diagnostic.severity.ERROR} }), opts)
             --
             -- opts.desc = "Go to next Error diagnostic"
             -- keymap.set("n", "]e", vim.diagnostic.goto_next({
