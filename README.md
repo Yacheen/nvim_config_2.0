@@ -1,4 +1,5 @@
 windows: 
+install node/npm
 
 install rust (follow instructions for visual studio tools on it)
 
