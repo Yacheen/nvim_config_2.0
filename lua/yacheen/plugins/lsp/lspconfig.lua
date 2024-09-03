@@ -76,7 +76,10 @@ return {
         end
         lspconfig["rust_analyzer"].setup{
             capabilities = capabilities,
-            on_attach = on_attach
+            on_attach = on_attach,
+            settings = {
+                procMacro = { enable = true },
+            },
         }
         lspconfig["taplo"].setup{
             capabilities = capabilities,
@@ -139,5 +142,9 @@ return {
             capabilities = capabilities,
             on_attach = on_attach
         }
+        lspconfig["clangd"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach
+        })
     end,
 }

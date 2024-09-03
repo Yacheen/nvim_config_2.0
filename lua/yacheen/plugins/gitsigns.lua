@@ -78,6 +78,7 @@ return {
                 row = 0,
                 col = 1
             },
+            -- apparently this does nothing now, maybe remove it idk
             yadm = {
                 enable = false
             },
