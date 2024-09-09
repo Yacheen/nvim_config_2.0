@@ -1,10 +1,21 @@
+-- return {
+--     "rebelot/kanagawa.nvim",
+--     priority = 1000, -- make sure to load this before anything else
+--     config = function()
+-- 	-- load colorscheme here
+-- 	vim.cmd([[colorscheme kanagawa]])
+--     end,
+-- }
 return {
-    "rebelot/kanagawa.nvim",
-    priority = 1000, -- make sure to load this before anything else
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
     config = function()
-	-- load colorscheme here
-	vim.cmd([[colorscheme kanagawa]])
-    end,
+        require("catppuccin").setup({
+            flavour = "mocha",
+        })
+        vim.cmd([[colorscheme catppuccin]])
+    end
 }
 -- return {
 --     "AlexvZyl/nordic.nvim",

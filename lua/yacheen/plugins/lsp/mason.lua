@@ -26,7 +26,7 @@ return {
             ensure_installed = {
                 "rust_analyzer",
                 "taplo", -- toml files
-                "ts_ls",
+                "tsserver",
                 "html",
                 "cssls",
                 "tailwindcss",
@@ -39,7 +39,6 @@ return {
                 "marksman", -- markdown
                 "clangd",
                 "csharp_ls"
-
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed

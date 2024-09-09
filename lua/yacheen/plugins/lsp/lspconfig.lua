@@ -85,7 +85,7 @@ return {
             capabilities = capabilities,
             on_attach = on_attach
         }
-        lspconfig["ts_ls"].setup{
+        lspconfig["tsserver"].setup{
             capabilities = capabilities,
             on_attach = on_attach
         }
@@ -148,7 +148,7 @@ return {
         })
         lspconfig["csharp_ls"].setup({
             capabilities = capabilities,
-            on_attach = on_attach
+            on_attach = on_attach,
         })
     end,
 }
