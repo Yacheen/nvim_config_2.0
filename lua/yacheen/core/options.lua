@@ -9,6 +9,10 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
+-- css is being a piece of shit
+vim.g.css_recommended_style = 0
+vim.g.scss_recommended_style = 0
+vim.g.sass_recommended_style = 0
 
 -- line wrapping
 opt.wrap = false

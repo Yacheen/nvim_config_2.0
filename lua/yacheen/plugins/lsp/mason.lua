@@ -26,7 +26,7 @@ return {
             ensure_installed = {
                 "rust_analyzer",
                 "taplo", -- toml files
-                "tsserver",
+                "ts_ls",
                 "html",
                 "cssls",
                 "tailwindcss",
