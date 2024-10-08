@@ -15,6 +15,9 @@ return {
     vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]])
 
 	nvimtree.setup({
+      view = {
+                adaptive_size = true
+            },
 	  renderer = {
 	    icons = {
 	      glyphs = {
