@@ -81,26 +81,6 @@ return {
                 procMacro = { enable = true },
             },
         }
-        lspconfig["taplo"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach
-        }
-        lspconfig["ts_ls"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach
-        }
-        lspconfig["html"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach
-        }
-        lspconfig["cssls"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach
-        })
-        lspconfig["tailwindcss"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach
-        }
         lspconfig["lua_ls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
@@ -121,34 +101,9 @@ return {
                 },
             },
         })
-        lspconfig["graphql"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach
-        }
-        lspconfig["emmet_ls"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach,
-            filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
-        }
         lspconfig["bashls"].setup{
             capabilities = capabilities,
             on_attach = on_attach
         }
-        lspconfig["dockerls"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach
-        }
-        lspconfig["marksman"].setup{
-            capabilities = capabilities,
-            on_attach = on_attach
-        }
-        lspconfig["clangd"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach
-        })
-        lspconfig["csharp_ls"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
     end,
 }
